@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinícola Premium | Tradição e Elegância desde 1920</title>
+    <meta name="description" content="Vinícola Premium desde 1920. Experimente vinhos exclusivos e agende degustações no Vale dos Vinhedos." />
+    <meta name="keywords" content="vinho, vinícola, degustação, cabernet, chardonnay, vale dos vinhedos" />
+    <meta name="author" content="Lucas Santos" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- CURSOR PREMIUM -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- PRELOADER -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-ornament">— ✦ —</div>
+        <div class="loader-logo">
+          <i class="fa-solid fa-wine-glass"></i>
+          <span>Vinícola</span>
+        </div>
+        <div class="loader-progress">
+          <div class="loader-bar"></div>
+        </div>
+        <span class="loader-tagline">Tradição · Terroir · Excelência</span>
+      </div>
+    </div>
+
+    <!-- AGE GATE -->
+    <div id="age-gate" class="age-gate">
+      <div class="age-gate-bg"></div>
+      <div class="age-gate-content">
+        <div class="age-gate-ornament">— ✦ —</div>
+        <div class="age-gate-logo"><i class="fa-solid fa-wine-glass"></i> Vinícola</div>
+        <h2 class="age-gate-title">Bem-vindo à nossa cave</h2>
+        <p class="age-gate-subtitle">Para acessar este site, confirme que você tem 18 anos ou mais.</p>
+        <div class="age-gate-buttons">
+          <button id="age-yes" class="btn-primary">Sim, tenho 18+</button>
+          <button id="age-no" class="age-gate-no">Não tenho 18 anos</button>
+        </div>
+        <p class="age-gate-disclaimer">Beba com moderação. Proibido para menores de 18 anos.</p>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <div class="logo"><i class="fa-solid fa-wine-glass"></i> Vinícola</div>
+
+        <button class="menu-toggle" aria-label="Abrir Menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#historia">Nossa História</a></li>
+            <li><a href="#vinhos">Os Vinhos</a></li>
+            <li><a href="#experiencias">Avaliações</a></li>
+            <li><a href="#" class="trigger-visit">Agende uma Visita</a></li>
+          </ul>
+        </nav>
+
+        <button class="cart-btn magnetic-btn" id="cart-toggle" aria-label="Seleção de Vinhos">
+          <i class="fa-solid fa-wine-bottle"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-parallax">
+        <img class="parallax-bg" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070&auto=format&fit=crop" alt="vinhedo ao pôr do sol" />
+      </div>
+      <div id="tsparticles"></div>
+      <div class="hero-overlay"></div>
+      <div class="grain-layer"></div>
+
+      <div class="hero-content container">
+        <div class="hero-eyebrow">
+          <span class="hero-line"></span>
+          <span class="subtitle">Desde 1920</span>
+          <span class="hero-line"></span>
+        </div>
+        <h1>
+          <em class="hero-italic">A Arte do Vinho</em>
+          <span class="hero-main">em Cada Taça</span>
+        </h1>
+        <p class="hero-desc">Vale dos Vinhedos · Região Sul do Brasil</p>
+        <a href="#vinhos" class="btn-primary magnetic-btn">
+          Descubra a Safra
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line-anim"></div>
+      </div>
+    </section>
+
+    <!-- AWARDS MARQUEE -->
+    <div class="awards-strip">
+      <div class="awards-track">
+        <span>🏆 Melhor Tinto do Sul 2023</span>
+        <span class="award-sep">✦</span>
+        <span>🥇 Decanter World Wine Awards 2022</span>
+        <span class="award-sep">✦</span>
+        <span>⭐ 97 Pontos Wine Spectator</span>
+        <span class="award-sep">✦</span>
+        <span>🍇 Vinícola do Ano 2024</span>
+        <span class="award-sep">✦</span>
+        <span>🏆 Melhor Reserva Especial 2023</span>
+        <span class="award-sep">✦</span>
+        <span>🥇 Decanter World Wine Awards 2022</span>
+        <span class="award-sep">✦</span>
+        <span>⭐ 97 Pontos Wine Spectator</span>
+        <span class="award-sep">✦</span>
+        <span>🍇 Vinícola do Ano 2024</span>
+        <span class="award-sep">✦</span>
+      </div>
+    </div>
+
+    <!-- HISTÓRIA -->
+    <section id="historia" class="history-section">
+      <div class="container history-container">
+        <div class="history-text">
+          <span class="subtitle">Tradição & Cuidado</span>
+          <h2>Um Legado <em>Engarrafado</em></h2>
+          <p>Nossa jornada começou com uma paixão simples: extrair a mais pura essência da terra. Ao longo de décadas, cultivamos não apenas vinhedos, mas um profundo respeito pelo tempo e pela natureza.</p>
+          <p>Cada garrafa que produzimos carrega a história de gerações dedicadas à excelência, unindo técnicas seculares às mais modernas inovações enológicas para entregar uma experiência única.</p>
+
+          <div class="history-milestones">
+            <div class="milestone">
+              <span class="milestone-year">1920</span>
+              <span class="milestone-dot"></span>
+              <span class="milestone-event">Fundação da Vinícola</span>
+            </div>
+            <div class="milestone">
+              <span class="milestone-year">1952</span>
+              <span class="milestone-dot"></span>
+              <span class="milestone-event">Primeiro Grande Prêmio</span>
+            </div>
+            <div class="milestone">
+              <span class="milestone-year">1989</span>
+              <span class="milestone-dot"></span>
+              <span class="milestone-event">Expansão Internacional</span>
+            </div>
+            <div class="milestone">
+              <span class="milestone-year">2020</span>
+              <span class="milestone-dot"></span>
+              <span class="milestone-event">Centenário da Excelência</span>
+            </div>
+          </div>
+
+          <a href="#vinhos" class="btn-secondary magnetic-btn">Conheça o Terroir</a>
+        </div>
+        <div class="history-image">
+          <div class="history-image-frame">
+            <img src="https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?q=80&w=1974&auto=format&fit=crop" alt="Barris de carvalho na adega" />
+          </div>
+          <div class="history-badge">
+            <span class="badge-year">1920</span>
+            <span class="badge-label">Fundação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VINHOS -->
+    <section id="vinhos" class="wines-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Nossa Coleção</span>
+          <h2>Sagas <em>Engarrafadas</em></h2>
+          <p>Descubra a expressão máxima do nosso terroir em cada safra.</p>
+        </div>
+
+        <div class="wines-grid">
+          <!-- Card 1 -->
+          <article class="wine-card">
+            <div class="wine-card-inner">
+              <div class="wine-image">
+                <img src="assets/Cabernet.png" alt="Cabernet Sauvignon 2018" />
+                <div class="wine-vintage-badge">2018</div>
+              </div>
+              <div class="wine-info">
+                <div class="wine-meta-row">
+                  <span class="wine-type">Tinto Reserva</span>
+                  <span class="wine-score"><i class="fa-solid fa-medal"></i> 97 pts</span>
+                </div>
+                <h3 class="wine-title">Cabernet Sauvignon 2018</h3>
+                <div class="wine-region"><i class="fa-solid fa-location-dot"></i> Vale dos Vinhedos</div>
+                <p class="wine-notes">Notas de frutas negras, carvalho e especiarias.</p>
+                <div class="wine-profile">
+                  <div class="profile-bar"><span>Taninos</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></div>
+                  <div class="profile-bar"><span>Acidez</span><div class="bar"><div class="bar-fill" style="--w:60%"></div></div></div>
+                  <div class="profile-bar"><span>Corpo</span><div class="bar"><div class="bar-fill" style="--w:90%"></div></div></div>
+                </div>
+                <button class="btn-text open-modal"
+                  data-title="Cabernet Sauvignon 2018"
+                  data-type="Tinto Reserva"
+                  data-notes="Estagiou 12 meses em barricas de carvalho francês. Taninos macios e final persistente com notas de frutas negras, carvalho e especiarias elegantes."
+                  data-img="assets/Cabernet.png"
+                  data-score="97 pts"
+                  data-region="Vale dos Vinhedos"
+                  data-pairing="Carnes vermelhas, queijos curados, cordeiro">
+                  Ver Detalhes <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="wine-card">
+            <div class="wine-card-inner">
+              <div class="wine-image">
+                <img src="assets/Chardonnay.png" alt="Chardonnay Gran Reserva 2020" />
+                <div class="wine-vintage-badge">2020</div>
+              </div>
+              <div class="wine-info">
+                <div class="wine-meta-row">
+                  <span class="wine-type">Branco Seco</span>
+                  <span class="wine-score"><i class="fa-solid fa-medal"></i> 94 pts</span>
+                </div>
+                <h3 class="wine-title">Chardonnay Gran Reserva 2020</h3>
+                <div class="wine-region"><i class="fa-solid fa-location-dot"></i> Serra Gaúcha</div>
+                <p class="wine-notes">Toques de baunilha, abacaxi e acidez equilibrada.</p>
+                <div class="wine-profile">
+                  <div class="profile-bar"><span>Taninos</span><div class="bar"><div class="bar-fill" style="--w:20%"></div></div></div>
+                  <div class="profile-bar"><span>Acidez</span><div class="bar"><div class="bar-fill" style="--w:75%"></div></div></div>
+                  <div class="profile-bar"><span>Corpo</span><div class="bar"><div class="bar-fill" style="--w:65%"></div></div></div>
+                </div>
+                <button class="btn-text open-modal"
+                  data-title="Chardonnay Gran Reserva 2020"
+                  data-type="Branco Seco"
+                  data-notes="Aromas complexos com toques de baunilha, abacaxi em calda e amanteigado. Acidez perfeitamente equilibrada e refrescante com final longo."
+                  data-img="assets/Chardonnay.png"
+                  data-score="94 pts"
+                  data-region="Serra Gaúcha"
+                  data-pairing="Frutos do mar, risotos cremosos, aves">
+                  Ver Detalhes <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="wine-card">
+            <div class="wine-card-inner">
+              <div class="wine-image">
+                <img src="assets/Pinot.png" alt="Pinot Noir Rosé 2022" />
+                <div class="wine-vintage-badge">2022</div>
+              </div>
+              <div class="wine-info">
+                <div class="wine-meta-row">
+                  <span class="wine-type">Rosé Premium</span>
+                  <span class="wine-score"><i class="fa-solid fa-medal"></i> 92 pts</span>
+                </div>
+                <h3 class="wine-title">Pinot Noir Rosé 2022</h3>
+                <div class="wine-region"><i class="fa-solid fa-location-dot"></i> Campanha Gaúcha</div>
+                <p class="wine-notes">Fresco, com aromas de morango e pétalas de rosa.</p>
+                <div class="wine-profile">
+                  <div class="profile-bar"><span>Taninos</span><div class="bar"><div class="bar-fill" style="--w:25%"></div></div></div>
+                  <div class="profile-bar"><span>Acidez</span><div class="bar"><div class="bar-fill" style="--w:70%"></div></div></div>
+                  <div class="profile-bar"><span>Corpo</span><div class="bar"><div class="bar-fill" style="--w:45%"></div></div></div>
+                </div>
+                <button class="btn-text open-modal"
+                  data-title="Pinot Noir Rosé 2022"
+                  data-type="Rosé Premium"
+                  data-notes="Vinho leve, vibrante e fresco. Morango fresco, framboesa e sutis notas de pétalas de rosa. Textura sedosa e final elegante. Perfeito para o verão."
+                  data-img="assets/Pinot.png"   
+                  data-score="92 pts"
+                  data-region="Campanha Gaúcha"
+                  data-pairing="Saladas, tartare, sobremesas leves, aperitivos">
+                  Ver Detalhes <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERROIR BREAK (Quote cinematic) -->
+    <section class="terroir-break">
+      <div class="terroir-parallax">
+        <img class="terroir-bg" src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2070&auto=format&fit=crop" alt="cave de vinhos" />
+      </div>
+      <div class="terroir-overlay"></div>
+      <div class="terroir-content container">
+        <div class="terroir-ornament">— ✦ —</div>
+        <blockquote class="terroir-quote">
+          "O vinho é a prova mais elegante de que Deus nos ama e quer que sejamos felizes."
+        </blockquote>
+        <span class="terroir-attribution">— Benjamin Franklin</span>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section id="experiencias" class="reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="subtitle">Experiências</span>
+          <h2>O que dizem <em>sobre nós</em></h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>"Uma experiência inesquecível. Os vinhos têm uma profundidade que raramente encontramos no Brasil."</p>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">MS</div>
+              <div class="review-author-info">
+                <h4>Maria Souza</h4>
+                <span>São Paulo, SP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card review-featured">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>"A melhor degustação que já fiz. O Cabernet 2018 é simplesmente extraordinário — um vinho que conta uma história."</p>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">CM</div>
+              <div class="review-author-info">
+                <h4>Carlos Mendes</h4>
+                <span>Porto Alegre, RS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p>"Ambiente elegante e vinhos excepcionais. A equipe tem um conhecimento impressionante sobre cada rótulo."</p>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="review-author">
+              <div class="review-avatar">AR</div>
+              <div class="review-author-info">
+                <h4>Ana Ribeiro</h4>
+                <span>Curitiba, PR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats-container">
+        <div class="stat">
+          <i class="fa-solid fa-award stat-icon"></i>
+          <div class="stat-number-row">
+            <h3 class="counter" data-target="100">0</h3>
+            <span class="stat-suffix">+</span>
+          </div>
+          <p>Anos de tradição</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <i class="fa-solid fa-medal stat-icon"></i>
+          <div class="stat-number-row">
+            <h3 class="counter" data-target="50">0</h3>
+          </div>
+          <p>Rótulos premiados</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <i class="fa-solid fa-users stat-icon"></i>
+          <div class="stat-number-row">
+            <h3 class="counter" data-target="12">0</h3>
+            <span class="stat-suffix">mil</span>
+          </div>
+          <p>Visitantes por ano</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <i class="fa-solid fa-globe stat-icon"></i>
+          <div class="stat-number-row">
+            <h3 class="counter" data-target="28">0</h3>
+          </div>
+          <p>Países exportados</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL VINHO -->
+    <div id="wine-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-grid">
+          <div class="modal-image">
+            <img id="modal-img" src="" alt="Garrafa de Vinho" />
+          </div>
+          <div class="modal-info">
+            <div class="modal-meta-row">
+              <span id="modal-type" class="wine-type"></span>
+              <span id="modal-score" class="modal-score-badge"></span>
+            </div>
+            <h3 id="modal-title" class="wine-title"></h3>
+            <div class="modal-region-line">
+              <i class="fa-solid fa-location-dot"></i>
+              <span id="modal-region-text"></span>
+            </div>
+            <p id="modal-notes" class="wine-notes modal-notes-full"></p>
+            <div class="modal-pairing">
+              <span class="pairing-label"><i class="fa-solid fa-utensils"></i> Harmoniza com:</span>
+              <span id="modal-pairing-text" class="pairing-value"></span>
+            </div>
+            <button class="btn-primary" onclick="addToCart()">
+              <i class="fa-solid fa-cart-plus"></i>
+              Adicionar à Seleção
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL VISITA -->
+    <div id="visit-modal" class="modal-overlay">
+      <div class="modal-content visit-content">
+        <button class="close-modal" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="section-header text-center" style="margin-bottom: 30px">
+          <span class="subtitle">Experiência Única</span>
+          <h2 style="font-size:2.5rem">Agende sua <em>Visita</em></h2>
+          <p>Venha conhecer nossos vinhedos e degustar safras exclusivas direto da cave.</p>
+        </div>
+        <form id="visit-form" class="visit-form">
+          <div class="form-group"><i class="fa-solid fa-user"></i><input type="text" placeholder="Seu Nome Completo" required /></div>
+          <div class="form-group"><i class="fa-solid fa-envelope"></i><input type="email" placeholder="Seu E-mail" required /></div>
+          <div class="form-grid">
+            <div class="form-group"><i class="fa-solid fa-calendar-day"></i><input type="date" required /></div>
+            <div class="form-group"><i class="fa-solid fa-clock"></i><input type="time" required /></div>
+          </div>
+          <div class="form-group">
+            <i class="fa-solid fa-user-group"></i>
+            <select required>
+              <option value="" disabled selected>Número de Pessoas</option>
+              <option value="1">1 Pessoa</option>
+              <option value="2">2 Pessoas</option>
+              <option value="3-5">3 a 5 Pessoas</option>
+              <option value="6+">Mais de 6 Pessoas</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;margin-top:15px">Confirmar Agendamento</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-sidebar-header">
+        <h3><i class="fa-solid fa-wine-bottle"></i> Sua Seleção</h3>
+        <button class="cart-close" id="cart-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <div class="cart-empty">
+          <i class="fa-solid fa-wine-glass"></i>
+          <p>Sua seleção está vazia.</p>
+          <span>Descubra nossos vinhos e adicione suas escolhas.</span>
+        </div>
+      </div>
+      <div class="cart-footer" id="cart-footer" style="display:none">
+        <button class="btn-primary" style="width:100%">
+          <i class="fa-solid fa-envelope"></i> Solicitar Proposta
+        </button>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-top-ornament">— ✦ —</div>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><i class="fa-solid fa-wine-glass"></i> Vinícola</div>
+          <p>Cultivando a excelência e engarrafando a tradição desde 1920. Descubra a verdadeira essência do nosso terroir.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#historia">Nossa História</a></li>
+            <li><a href="#vinhos">Catálogo de Vinhos</a></li>
+            <li><a href="#" class="trigger-visit">Agende uma Visita</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-location-dot"></i> Vale dos Vinhedos, Lote 42</li>
+            <li><i class="fa-solid fa-envelope"></i> contato@vinicola.com.br</li>
+            <li><i class="fa-solid fa-phone"></i> +55 (54) 99999-9999</li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Assine para receber convites de degustações e lançamentos de safras exclusivas.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Seu melhor e-mail" required />
+            <button type="submit" class="btn-primary">Assinar</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+          <p>&copy; 2026 Vinícola Premium. Todos os direitos reservados.</p>
+          <div class="developer-credit">
+            <span>Desenvolvido por</span>
+            <a href="https://lucastec.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Portfólio Lucas">
+              <img src="assets/LogoNome.png" alt="Logo Lucas Santos" class="footer-logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
