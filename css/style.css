@@ -205,7 +205,7 @@ body.cursor-hover .cursor-ring {
   opacity: 0;
   animation: fadeInUp 0.8s ease 0.4s forwards;
 }
-.loader-logo i { font-size: 2.5rem; }
+.loader-logo img { height: 100px; }
 
 .loader-progress {
   width: 200px;
@@ -284,6 +284,11 @@ body.cursor-hover .cursor-ring {
   margin-bottom: 24px;
 }
 
+.age-gate-logo img {
+  height: 60px;
+
+}
+
 .age-gate-title {
   font-family: var(--fonte-display);
   font-size: 2rem;
@@ -360,13 +365,19 @@ body.cursor-hover .cursor-ring {
 .logo {
   font-family: var(--fonte-display);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--cor-dourado);
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   transition: transform var(--transicao);
 }
 .logo:hover { transform: scale(1.04); }
+
+.logo img {
+  height: 40px;
+  transition: transform var(--transicao);
+}
+.logo:hover img { transform: scale(1.1); }
 
 /* Menu toggle hamburger animado */
 .menu-toggle {
